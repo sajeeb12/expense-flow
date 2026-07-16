@@ -7,7 +7,7 @@ export default function AppShell({children} : {children:React.ReactNode}){
             <div className="flex h-screen w-full bg-gray-50 overflow-hidden">
       
       {/* Sidebar fixed to the left */}
-      <aside className="w-64 flex-shrink-0 border-r bg-white">
+      <aside className="flex-shrink-0 border-r bg-white">
         <AppSidebar />
       </aside>
 
