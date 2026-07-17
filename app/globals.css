@@ -46,6 +46,9 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+  --layout-sidebar-width: var(--layout-sidebar-width);
+  --layout-header-height: var(--layout-header-height);
+  --layout-page-padding: var(--layout-page-padding);
 }
 
 :root {
@@ -81,6 +84,9 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --layout-sidebar-width: 18rem;
+  --layout-header-height: 4rem;
+  --layout-page-padding: 1.5rem;
 }
 
 .dark {

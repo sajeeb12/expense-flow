@@ -1,20 +1,21 @@
-import Link from "next/link";
+import { Sidebar, SidebarContent, SidebarGroup, SidebarHeader, SidebarTrigger } from "../ui/sidebar";
 import SideBarNav from "./sidebar-nav";
+import { LAYOUT } from "@/lib/constant";
 
 export default function AppSidebar() {
   return (
-    <aside className="flex h-full w-70 flex-col border-r border-gray-200 bg-white">
-      {/* Brand / Logo Section */}
-      <div className="border-b border-gray-200 py-4.5 px-4">
-        <h1 className="text-xl font-extrabold tracking-tight text-gray-900">
-          ExpenseFlow
-        </h1>
-      </div>
-
-      {/* Navigation Section */}
-      <nav className="flex flex-1 flex-col gap-1.5 overflow-y-auto p-4">
-        <SideBarNav/>
-      </nav>
-    </aside>
+    <Sidebar>
+      <SidebarHeader className="h-(--layout-header-height) flex items-start justify-center border-b px-4">
+        {/* Placeholder logo space */}
+        <span className="font-bold text-lg text-gray-900 ">Expense Flow</span>
+      </SidebarHeader>
+      
+      <SidebarContent>
+        <SidebarGroup>
+          {/* Your custom navigation component drops right in */}
+          <SideBarNav />
+        </SidebarGroup>
+      </SidebarContent>
+    </Sidebar>
   );
 }
