@@ -11,8 +11,12 @@ export default function AppHeader(){
                 <HeaderTitle/>
             </div>
 
-            <div>
-                Theme Toggle
+            <div className="flex gap-4 items-center">
+                <p>Search</p>
+                <p>Notification</p>
+                <p>Avatar</p>
+                <p>Theme</p>
+                
             </div>
         </header>
     )
