@@ -49,6 +49,7 @@
   --layout-sidebar-width: var(--layout-sidebar-width);
   --layout-header-height: var(--layout-header-height);
   --layout-page-padding: var(--layout-page-padding);
+  --layout-page-padding-res: var(--layout-page-padding-responsive);
 }
 
 :root {
@@ -87,6 +88,7 @@
   --layout-sidebar-width: 18rem;
   --layout-header-height: 4rem;
   --layout-page-padding: 1.5rem;
+  --layout-page-padding-responsive: 0.75rem;
 }
 
 .dark {

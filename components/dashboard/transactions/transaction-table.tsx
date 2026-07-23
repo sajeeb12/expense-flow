@@ -1,7 +1,7 @@
 import { Transaction } from "@/types/transaction";
-import { Card } from "../ui/card";
-import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "../ui/table";
 import { cn } from "@/lib/utils";
+import { Card } from "@/components/ui/card";
+import { TableCaption, TableHeader, TableRow, TableHead, TableBody, TableCell, Table } from "@/components/ui/table";
 
 export interface transactionProps{
     transactions:Transaction[]
